@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "o_*se9^g(&vtgoo@ms66hd%6=-v$*q!px79djwy+&sf32vzyxd"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "ilya-shevelev.ru",
@@ -157,3 +157,5 @@ LANGUAGES = (
     ("ru", gettext("Russia")),
     ("en", gettext("English")),
 )
+
+BASE_URL = "https://ilya-shevelev"

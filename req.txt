@@ -6,4 +6,5 @@ django-modeltranslation
 djangorestframework
 drf-yasg
 Pillow
-psycopg2
+psycopg2-binary
+python-decouple
