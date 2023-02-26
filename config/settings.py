@@ -32,6 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "ilya-shevelev.ru",
     "www.ilya-shevelev.ru",
+    "82.146.46.116",
 ]
 
 
