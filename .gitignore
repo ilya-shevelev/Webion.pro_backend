@@ -1,0 +1,5 @@
+.venv
+__pycache__/
+admin_password.txt
+david_password.txt
+ТЗ.docx

@@ -1,0 +1,9 @@
+Django
+django-environ
+gunicorn
+django-cors-headers
+django-modeltranslation
+djangorestframework
+drf-yasg
+Pillow
+psycopg2
