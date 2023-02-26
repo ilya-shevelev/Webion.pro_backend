@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "o_*se9^g(&vtgoo@ms66hd%6=-v$*q!px79djwy+&sf32vzyxd"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", default=False, cast=bool)
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "ilya-shevelev.ru",
@@ -71,7 +70,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = f'{config("PROJECT_NAME")}.urls'
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
@@ -89,7 +88,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = f'{config("PROJECT_NAME")}.wsgi.application'
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
@@ -98,9 +97,9 @@ WSGI_APPLICATION = f'{config("PROJECT_NAME")}.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": config("DB_NAME"),
-        "USER": config("DB_USER"),
-        "PASSWORD": config("DB_PASSWORD"),
+        "NAME": "team_app",
+        "USER": "django",
+        "PASSWORD": "admin",
         "HOST": "localhost",
         "PORT": "",
     }
