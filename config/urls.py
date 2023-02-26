@@ -29,6 +29,7 @@ urlpatterns += i18n_patterns(
     path("api/v1/jobs/", include("jobs.urls")),
     path("api/v1/request/", include("requests_app.urls")),
     path("api/v1/works/", include("works.urls")),
+    path("api/v1/reviews/", include("reviews.urls")),
 )
 
 urlpatterns += doc_urls

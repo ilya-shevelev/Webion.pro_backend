@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Request(models.Model):
-    """Отзывы"""
+    """Заявки"""
 
     email = models.EmailField("Email")
     name = models.CharField("Имя", max_length=255, blank=True, null=True)

@@ -26,4 +26,5 @@ class WorkDetailSerializer(serializers.ModelSerializer):
             "description_en",
             "client_ru",
             "client_en",
+            "client_photo",
         )

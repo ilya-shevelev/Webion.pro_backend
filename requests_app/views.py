@@ -4,4 +4,5 @@ from .serializers import RequestSerializer
 
 class RequestCreateView(generics.CreateAPIView):
     "Добавление заявки"
+
     serializer_class = RequestSerializer

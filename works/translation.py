@@ -3,5 +3,5 @@ from .models import Work
 
 
 @register(Work)
-class CategoryTranslationOptions(TranslationOptions):
+class WorkTranslationOptions(TranslationOptions):
     fields = ("name", "description", "client")

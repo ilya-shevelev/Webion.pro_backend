@@ -8,6 +8,9 @@ class Work(models.Model):
     description = models.TextField("Описание", blank=True, null=True)
     url = models.URLField("URL-адрес")
     client = models.CharField("Клиент", max_length=255, blank=True, null=True)
+    client_photo = models.ImageField(
+        "Фото клиента", upload_to="clients_photos", null=True, blank=True
+    )
     main_image = models.ImageField("Главное изображение", upload_to="works_main_images")
     date = models.DateField("Дата", auto_now_add=True)
 

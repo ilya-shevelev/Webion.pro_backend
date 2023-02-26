@@ -3,5 +3,5 @@ from .models import Staff
 
 
 @register(Staff)
-class CategoryTranslationOptions(TranslationOptions):
+class StaffTranslationOptions(TranslationOptions):
     fields = ("name",)
