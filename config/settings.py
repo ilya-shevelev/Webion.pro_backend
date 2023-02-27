@@ -97,7 +97,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "team_app",
+        "NAME": "team_db",
         "USER": "django",
         "PASSWORD": "admin",
         "HOST": "localhost",
