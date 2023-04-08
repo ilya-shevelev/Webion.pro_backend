@@ -27,11 +27,9 @@ SECRET_KEY = "o_*se9^g(&vtgoo@ms66hd%6=-v$*q!px79djwy+&sf32vzyxd"
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "ilya-shevelev.ru",
-    "www.ilya-shevelev.ru",
-    "ilasevelev10776.fvds.ru",
-    "www.ilasevelev10776.fvds.ru",
-    "82.146.46.116",
+    "webion.pro",
+    "www.webion.pro",
+    "188.225.76.77",
 ]
 
 
@@ -97,9 +95,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "team_db",
-        "USER": "django",
-        "PASSWORD": "admin",
+        "NAME": "webion",
+        "USER": "ilya",
+        "PASSWORD": "ilya",
         "HOST": "localhost",
         "PORT": "",
     }
@@ -167,4 +165,4 @@ LANGUAGES = (
     ("en", gettext("English")),
 )
 
-BASE_URL = "https://ilya-shevelev.ru"
+BASE_URL = "https://webion.pro"
